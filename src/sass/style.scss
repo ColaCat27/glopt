@@ -1,6 +1,13 @@
-h1 {
-    color: tomato;
-    font-size: 15px;
+@import 'base/variables';
+@import 'base/mixins';
+@import 'libs/reset.min';
+@import 'libs/fonts';
+
+@import 'blocks/header';
+@import 'blocks/buttons';
+
+* {
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {

@@ -1,0 +1,8 @@
+@mixin regular-font {
+    font-family: 'Roboto Condensed Regular';
+    font-weight: 400;
+}
+@mixin bold-font {
+    font-family: 'Roboto Condensed Bold';
+    font-weight: 700;
+}
