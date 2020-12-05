@@ -1,0 +1,31 @@
+.work {
+    padding: 51px 0 57px 0;
+    &__divider {
+        width: 148px;
+        height: 1px;
+        background-color: $main-color;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 17px;
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 37px;
+        justify-content: space-between;
+    }
+    &__title {
+        color: #ec644b;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 28px;
+    }
+    &__descr {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 12px;
+    }
+}
