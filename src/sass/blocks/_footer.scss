@@ -1,0 +1,25 @@
+.footer {
+    background-color: #25333c;
+    padding: 24px 0 28px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__offer {
+        display: flex;
+        align-items: center;
+        span {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: left;
+        }
+    }
+    &__logo {
+        display: block;
+        margin-right: 43px;
+        max-height: 71px;
+    }
+}

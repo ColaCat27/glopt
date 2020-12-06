@@ -1,0 +1,25 @@
+.phone {
+    display: flex;
+    &__wrapper {
+        padding-right: 13px;
+    }
+    &__text {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: right;
+    }
+    &__mobile {
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: right;
+        margin-top: 5px;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
