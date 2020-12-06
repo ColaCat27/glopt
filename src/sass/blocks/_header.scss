@@ -8,16 +8,18 @@
     }
     &__logo {
         img {
-            width: 100%;
+            max-width: 96px;
         }
     }
     &__menu {
         display: flex;
         list-style-type: none;
-        width: 600px;
         justify-content: space-between;
         margin-bottom: 0px;
         padding-left: 0px;
+    }
+    &__item {
+        margin: 0 16px;
     }
     &__link {
         color: #ffffff;
@@ -88,8 +90,10 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         &-item {
-            width: 100%;
+           max-width: 250px;
+           margin: 0 17px;
         }
     }
     &__img {

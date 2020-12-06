@@ -5,6 +5,12 @@
         margin-top: 37px;
         justify-content: space-between;
     }
+    &__item {
+        width: 33%;
+    }
+    &__img {
+        width: 100%;
+    }
     &__title {
         color: #ec644b;
         font-size: 18px;
