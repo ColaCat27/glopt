@@ -1,0 +1,33 @@
+.schema {
+    padding: 51px 0 0 0;
+    background-color: #f3f3f3;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 36px;
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 253px;
+        margin: 0 10px;
+        margin-bottom: 46px;
+    }
+    &__name {
+        color: $main-color;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 12px;
+    }
+    &__descr {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 12px;
+    }
+}
