@@ -1,3 +1,52 @@
 .comments {
     padding: 51px 0 65px 0;
+    &__slider {
+        position: relative;
+        display: flex;
+        max-width: 1800px;
+        margin: 0 auto;
+        margin-top: 31px;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+        max-width: 225px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    &__arrow {
+        max-height: 46px;
+        display: none;
+    }
+    &__item {
+        width: 600px;
+        opacity: 0.5;
+        transform: scale(0.7);
+        &_active {
+            opacity: 1;
+            transform: scale(1);
+            .comments__arrow {
+                display: block;
+            }
+        }
+    }
+    &__img {
+        max-width: 114px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 19px;
+    }
+    &__text {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22.01px;
+        text-align: center;
+        margin-top: 15px;
+    }
 }
