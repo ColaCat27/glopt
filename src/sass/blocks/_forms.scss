@@ -1,0 +1,40 @@
+.feed-form {
+    padding: 68px 0 53px 0;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 85px;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        input {
+            width: 268px;
+            border: 1px solid rgba(0, 0, 0, 0.21);
+            background-color: #ffffff;
+            border-radius: 25px;
+            padding: 18px  28px;
+            color: #101010;
+            font-size: 13px;
+            font-weight: 300;
+            margin: 0 3px;
+            &:focus {
+                outline: none;
+                box-shadow: 0px 0px 0px 1px $main-color;
+            }
+        }
+    }
+    &__round {
+        position: absolute;
+        top: -30%;
+        background-color: #fff;
+        padding: 0 10px;
+    }
+    &__button {
+        position: absolute;
+        bottom: -13%;
+        background-color: #fff;
+        padding: 0 10px;
+    }
+}
