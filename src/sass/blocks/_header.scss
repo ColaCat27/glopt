@@ -109,9 +109,13 @@
            margin: 0 17px;
         }
     }
+    &__container {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     &__img {
-        display: block;
-        margin: 0 auto;
         max-height: 100%;
     }
     &__descr {
@@ -120,7 +124,7 @@
         font-weight: 300;
         line-height: 22px;
         text-align: center;
-        margin-top: 19px;
+        margin-top: 10px;
         min-height: 135px;
     }
 }
