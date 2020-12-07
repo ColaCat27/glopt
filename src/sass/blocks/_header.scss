@@ -19,7 +19,11 @@
         padding-left: 0px;
     }
     &__item {
-        margin: 0 16px;
+        border-right: 1px dotted #fff;
+        padding: 0 16px;
+        &:last-child {
+            border: none;
+        }
     }
     &__link {
         color: #ffffff;
