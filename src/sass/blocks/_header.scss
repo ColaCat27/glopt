@@ -11,6 +11,9 @@
             max-width: 96px;
         }
     }
+    .divider {
+        display: none;
+    }
     &__menu {
         display: flex;
         list-style-type: none;

@@ -40,6 +40,12 @@
             font-size: 13px;
             width: 200px;
         }
+        &__divider {
+            display: none;
+        }
+        .divider {
+            display:block;
+        }
     }
     .phone {
         &__mobile {
@@ -98,6 +104,16 @@
         }
         &__descr {
             font-size: 12px;
+        }
+    }
+    .price {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item {
+            margin: 0 10px;
+            margin-bottom: 10px;
         }
     }
     .comments {
@@ -204,6 +220,9 @@
     }
     .advantages {
         padding: 35px 0 40px 0;
+        &__item {
+            justify-content: stretch;
+        }
         &__descr {
             font-size: 11px;
             span {
@@ -221,21 +240,14 @@
             font-size: 11px;
             margin-top: 5px;
         }
+        &__item {
+            margin-top: 10px;
+        }
     }
     .agent {
         .text {
             margin: 0 10px;
             margin-top: 10px;
-        }
-    }
-    .price {
-        &__wrapper {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        &__item {
-            margin: 0 10px;
-            margin-bottom: 10px;
         }
     }
     .schema {
@@ -264,6 +276,76 @@
             }
             .button {
                 height: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .header {
+        &__header {
+            font-size: 18px;
+        }
+        &__subheader {
+            font-size: 25px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+        &__content {
+            flex-wrap: wrap;
+            justify-content: center;
+            &-item {
+                width: 39%;
+                margin: 0 10px;
+            }
+        }
+    }
+    .advantages {
+        &__item {
+            width: 100%;
+        }
+    }
+    .work {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 100%;
+        }
+    }
+    .feed-form {
+        &__round {
+            top: -17%;
+        }
+        &__button {
+            bottom: -8%;
+        }
+        &__wrapper {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            input {
+                width: 80%;
+                margin-top: 5px;
+            }
+        }
+        &__textarea {
+            width: 80%;
+        }
+    }
+    .schema {
+        &__item {
+            margin-bottom: 25px;
+        }
+    }
+    .comments {
+        width: 100%;
+        overflow: hidden;
+        &__item {
+            display: none;
+            &_active {
+                display: block;
+                width: 100%;
             }
         }
     }
