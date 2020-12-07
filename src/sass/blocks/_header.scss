@@ -18,6 +18,9 @@
         margin-bottom: 0px;
         padding-left: 0px;
     }
+    &__burger {
+        display: none;
+    }
     &__item {
         border-right: 1px dotted #fff;
         padding: 0 16px;
