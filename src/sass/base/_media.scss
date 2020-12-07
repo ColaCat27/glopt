@@ -319,7 +319,9 @@
             flex-wrap: wrap;
         }
         &__item {
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 15px;
         }
     }
     .feed-form {
