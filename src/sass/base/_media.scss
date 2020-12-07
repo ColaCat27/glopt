@@ -349,4 +349,28 @@
             }
         }
     }
+    .footer {
+        &__logo {
+            display: none;
+        }
+        &__offer {
+            span {
+                text-align: center;
+                font-size: 11px;
+            }
+        }
+        &__wrapper {
+            flex-direction: column;
+        }
+        .phone {
+            align-items: center;
+            padding-right: 0px;
+            &__wrapper {
+                padding: 0px;
+            }
+            &__text {
+                text-align: center;
+            }
+        }
+    }
 }
