@@ -94,6 +94,13 @@
         &__descr {
             font-size: 13px;
         }
+        &__wrapper {
+            justify-content: center;
+        }
+        &__item {
+            margin: 0 10px;
+            margin-bottom: 10px;
+        }
         .button {
             width: 145px;
         }
@@ -104,16 +111,6 @@
         }
         &__descr {
             font-size: 12px;
-        }
-    }
-    .price {
-        &__wrapper {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        &__item {
-            margin: 0 10px;
-            margin-bottom: 10px;
         }
     }
     .comments {
@@ -248,6 +245,11 @@
             margin-top: 10px;
         }
     }
+    .price {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+    }
     .agent {
         .text {
             margin: 0 10px;
@@ -294,6 +296,9 @@
         }
         &__text {
             font-size: 20px;
+        }
+        &__link {
+            font-size: 15px;
         }
         &__content {
             flex-wrap: wrap;
