@@ -9,6 +9,10 @@
     text-align: center;
     text-transform: uppercase;
     border-radius: 20px;
+    transition: 0.2s all;
+    &:hover {
+        background-color: $hover-color;
+    }
     &:focus {
         outline: none;
     }

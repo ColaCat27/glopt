@@ -35,9 +35,12 @@
         color: #ffffff;
         font-size: 15px;
         font-weight: 400;
+        padding-bottom: 5px;
+        transition: 0.3s all;
         &:hover {
-            color:#fff;
+            color:$main-color;
             text-decoration: none;
+            border-bottom: 1px solid $main-color;
         }
     }
     &__header {

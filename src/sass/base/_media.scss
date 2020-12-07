@@ -143,6 +143,8 @@
             margin: 0 30px;
         }
         &__menu {
+            opacity: 0;
+            display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -156,7 +158,9 @@
             transition: 0.3s all;
             transform: translateX(-100%);
             &_active {
+                display: flex;
                 transform: translateX(0%);
+                opacity: 1;
             }
         }
         &__item {
