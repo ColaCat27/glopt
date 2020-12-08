@@ -150,8 +150,6 @@
             transform: translateX(-100%);
             &_active {
                 display: flex;
-                transform: translateX(0%);
-                opacity: 1;
             }
         }
         &__item {
