@@ -1,0 +1,13 @@
+.up {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0;
+    display: none;
+    transition: 0.3s all;
+    &_active {
+        display: block;
+    }
+}

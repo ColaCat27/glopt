@@ -80,7 +80,7 @@ anchors.forEach(item => {
         e.preventDefault();
 
         const id = item.getAttribute('href').substr(1);
-        
+
         document.getElementById(id).scrollIntoView({
             behavior: 'smooth',
             block: 'start'
@@ -90,3 +90,23 @@ anchors.forEach(item => {
 };
 
 smoothScroll();
+
+// up arrow 
+
+function upArrow() {
+const arrow = document.querySelector('.up');
+
+    document.addEventListener('scroll', () => {
+        if (window.pageYOffset >= 1000) {
+            arrow.classList.add('up_active');
+            setTimeout(() => {
+                arrow.classList.add('arrowIn');
+            }, 100)
+        } else {
+            arrow.classList.remove('up_active');
+            arrow.classList.remove('arrowIn');
+        }
+    });
+}
+
+upArrow();

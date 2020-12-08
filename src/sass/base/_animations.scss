@@ -10,6 +10,21 @@
     animation-fill-mode: forwards;
 }
 
+.arrowIn {
+    animation-name: arrowIn;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes arrowIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeLeft {
     0% {
         opacity: 0;
