@@ -1,12 +1,20 @@
 .comments {
     padding: 51px 0 65px 0;
+    min-height: 617px;
     &__slider {
-        position: relative;
-        display: flex;
-        max-width: 1800px;
-        margin: 0 auto;
+        width: 100%;
         margin-top: 31px;
+        
+    }
+    &__inner {
+        width: 80%;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
         justify-content: space-between;
+        transition: 0.3s all;
+        transform-style: preserve-3d;
+        perspective: 500px;
     }
     &__nav {
         display: flex;
@@ -20,17 +28,28 @@
         cursor: pointer;
     }
     &__item {
-        max-width: 600px;
+        position: absolute;
+        max-width: 33%;
+        left: 50%;
+        transform: translate3d(-50%, 0 , 0);
         opacity: 0.5;
-        transform: scale(0.7);
-        &_active {
+        transition: 1s all;
+        &_left {
+            transform: translate3d(-175%,0, -200px);
+        }
+        &_main {
             opacity: 1;
-            transform: scale(1);
+            transform: none;
+            transform: translate3d(-50% ,0,0);
             .comments__arrow {
                 display: block;
             }
         }
+        &_right {
+            transform: translate3d(75%, 0, -200px);
+        }
     }
+
     &__img {
         max-width: 114px;
         display: block;

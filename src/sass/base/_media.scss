@@ -259,8 +259,15 @@
         }
     }
     .comments {
+        overflow: hidden;
         .subtitle {
             margin: 0 10px;
+        }
+        &__item {
+            max-width: 100%;
+            &_left, &_right {
+                opacity: 0;
+            }
         }
     }
     .footer {
@@ -344,15 +351,22 @@
         }
     }
     .comments {
-        width: 100%;
-        overflow: hidden;
-        &__item {
-            display: none;
-            &_active {
-                display: block;
-                width: 100%;
-            }
+        max-height: 650px;
+        &__arrow {
+            max-height: 25px;
         }
+        &__img {
+            max-width: 80px;
+        }
+        &__name {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        &__text {
+            font-size: 10px;
+            margin-top: 5px;
+        }
+
     }
     .footer {
         &__logo {
