@@ -63,9 +63,30 @@ const menu = document.querySelector('.header__menu'),
             menu.classList.remove('header__menu_active');
             menu.classList.remove('opacityIn');
             menu.classList.remove('opacityOut');
-        }, 1000);
+        }, 500);
     };
 
 };
 
 toggleMenu();
+
+// smooth scrolling
+
+function smoothScroll() {
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+anchors.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const id = item.getAttribute('href').substr(1);
+        
+        document.getElementById(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+};
+
+smoothScroll();
