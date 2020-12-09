@@ -1,3 +1,5 @@
+"use strict";
+
 function carousel(allSlidesSelector, nextArrow, prevArrow) {
 const arrowNext = document.querySelectorAll(nextArrow),
       arrowPrev = document.querySelectorAll(prevArrow),
@@ -73,20 +75,34 @@ toggleMenu();
 // smooth scrolling
 
 function smoothScroll() {
-const anchors = document.querySelectorAll('a[href*="#"]')
+const anchors = document.querySelectorAll('a[href*="#"]'),
+      buttons = document.querySelectorAll('button[data-target]');
+
+buttons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        scrollToElem(button, 'data-target');
+    });
+});
 
 anchors.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
 
-        const id = item.getAttribute('href').substr(1);
-
-        document.getElementById(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+        scrollToElem(item, 'href');
     });
 });
+
+function scrollToElem(elem, attr) {
+    const id = elem.getAttribute(attr).substr(1);
+
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+}
+
 };
 
 smoothScroll();

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glop</title>
+    <title>Glopt</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
                     <div class="phone__text">Есть вопросы?</div>
                     <a href="tel:+79264230100" class="phone__mobile">+7 (926) 423 01 00</a>
                 </div>
-                <button class="button">Перезвоните мне</button>
+                <button class="button" data-target="#consultation">Перезвоните мне</button>
             </div>
         </nav>
 
@@ -68,7 +68,7 @@
             </div>
         </div>
 
-        <button class="button button_main">Получить расчет</button>
+        <button class="button button_main" data-target="#questions">Получить расчет</button>
 
         </div>
     </header>
@@ -220,21 +220,20 @@
         </div>
     </section>
 
-    <section class="consultation">
+    <section class="consultation" id="consultation">
         <div class="container">
             <h2 class="title title_fz28">Заказать бесплатную консультацию</h2>
 
-            <form action="" class="feed-form">
+            <form action="" class="feed-form" name="feed">
                 <div class="feed-form__round">
                     <div class="round round_orange">
                         <img src="icons/operator.png" alt="operator">
                     </div>
                 </div>
-                
                 <div class="feed-form__wrapper">
-                    <input type="text" placeholder="Ваше имя...">
-                    <input type="text" placeholder="Ваш номер телефона...">
-                    <input type="email" placeholder="Ваш e-mail...">
+                        <input required minlength="2" maxlength="20" name="name" type="text" placeholder="Ваше имя...">
+                        <input required minlength="7" maxlength="15" name="phone" type="text" placeholder="Ваш номер телефона...">
+                        <input required maxlength="30" name="email" type="email" placeholder="Ваш e-mail...">
                 </div>
                 <div class="feed-form__button">
                     <button class="button button_form">Отправить заявку</button>
@@ -343,17 +342,17 @@
         </div>
     </section>
 
-    <section class="questions">
+    <section class="questions" id="questions">
         <div class="container">
             <form action="" class="feed-form">
                 <div class="feed-form__title">Остались вопросы?
                     <span>Напишите нам!</span></div>
                 <div class="feed-form__wrapper">
-                    <input type="text" placeholder="Ваше имя...">
-                    <input type="text" placeholder="Ваш номер телефона...">
-                    <input type="email" placeholder="Ваш e-mail...">
+                    <input required minlength="2" maxlength="20" name="name" type="text" placeholder="Ваше имя...">
+                    <input required minlength="7" maxlength="15" name="phone" type="text" placeholder="Ваш номер телефона...">
+                    <input required maxlength="30" name="email" type="email" placeholder="Ваш e-mail...">
                 </div>
-                <input type="textarea" placeholder="Сообщение..." class="feed-form__textarea">
+                <input required type="textarea" placeholder="Сообщение..." class="feed-form__textarea">
                 <button class="button button_form">Отправить заявку</button>
             </form>
         </div>
@@ -376,7 +375,7 @@
                         <div class="phone__text">Есть вопросы?</div>
                         <a href="tel:+79264230100" class="phone__mobile">+7 (926) 423 01 00</a>
                     </div>
-                    <button class="button">Перезвоните мне</button>
+                    <button class="button" data-target="#consultation">Перезвоните мне</button>
                 </div>
             </div>
             <div class="divider divider_footer"></div>
