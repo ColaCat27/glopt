@@ -126,3 +126,6 @@ const arrow = document.querySelector('.up');
 }
 
 upArrow();
+
+
+new WOW().init();
